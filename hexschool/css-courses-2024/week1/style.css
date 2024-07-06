@@ -132,8 +132,8 @@ table {
 }
 
 *,
-*::before,
-*::after {
+*:before,
+*:after {
   box-sizing: border-box;
   /* outline: solid 1px; */
 }
