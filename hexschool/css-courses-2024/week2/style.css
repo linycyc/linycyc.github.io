@@ -143,6 +143,26 @@ body {
   font-family: "Bruno Ace SC", sans-serif;
 }
 
+.h1 {
+  font-size: 128px;
+}
+
+.h2 {
+  font-size: 64px;
+}
+
+.fs-1 {
+  font-size: 32px;
+}
+
+.fs-2 {
+  font-size: 24px;
+}
+
+.fs-3 {
+  font-size: 20px;
+}
+
 img {
   vertical-align: middle;
 }
@@ -158,8 +178,9 @@ img {
   display: block;
 }
 
-.contact-section {
-  height: 354px;
+.nav li:hover {
+  border-bottom: 2px solid #00ffa3;
+  transition: 0.5;
 }
 
 .container {
@@ -180,11 +201,15 @@ img {
 }
 
 .justify-between {
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .justify-start {
   justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-end {
@@ -193,14 +218,6 @@ img {
 
 .items-center {
   align-items: center;
-}
-
-.contact {
-  background-color: #000000;
-}
-
-.banner {
-  background-color: #000000;
 }
 
 .text-white {
@@ -231,6 +248,10 @@ img {
   color: #00ffa3;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .mr-1 {
   margin-right: 4px;
 }
@@ -245,6 +266,10 @@ img {
 
 .mb-1 {
   margin-bottom: 4px;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
 }
 
 .mb-8 {
@@ -271,17 +296,49 @@ img {
   padding: 40px 0px;
 }
 
-.button-black {
+.contact {
+  background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+}
+
+.contact-section {
+  height: 354px;
+}
+
+.contact-item a {
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 40px;
+}
+
+.contact-item a:hover {
+  box-shadow: 0px 0px 16px 3px #9094ffe5;
+  border-radius: 40px;
+  transition: 0.5s;
+}
+
+.banner {
+  background-color: #000000;
+}
+
+.btn-black {
   background-color: black;
   border-radius: 32px;
   color: white;
   text-decoration: none;
 }
 
-.button-white {
+.btn-black:hover {
+  scale: 1.1;
+}
+
+.btn-white {
   background-color: white;
   border-radius: 32px;
   text-decoration: none;
+  color: black;
+}
+
+.btn-white:hover {
+  scale: 1.1;
 }
 
 .info {
@@ -296,12 +353,35 @@ img {
   padding: 160px 0;
 }
 
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 636px;
+  gap: 24px;
+}
+
+.about-list li {
+  width: calc(50% - 12px);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+  padding: 0px 16px;
+}
+
+.about-desc {
+  width: 526px;
+}
+
+.card {
+  padding: 16px;
+  width: 50%;
+}
+
 .my-project {
   padding: 160px 0;
 }
 
 .my-project-title {
   width: 746px;
+  margin-left: auto;
 }
 
 .introduction-content {
@@ -313,22 +393,4 @@ img {
 
 .footer {
   background-color: #000000;
-}
-
-.card-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -12px;
-  margin-right: -12px;
-}
-
-.card {
-  padding: 16px;
-  width: 50%;
-}
-
-.column {
-  margin-left: 12px;
-  margin-right: 12px;
-  margin-bottom: 12px;
 }

@@ -9,24 +9,32 @@
   <body>
     <nav class="nav">
       <div class="container">
-        <ul class="d-flex justify-between items-center">
-          <li><a href="#">WILLIAM LEE</a></li>
-          <li><a href="#">BASED IN TAIWAN</a></li>
+        <ul class="d-flex justify-between items-center nav-item">
+          <li>
+            <a href="#"><span>WILLIAM LEE</span></a>
+          </li>
+          <li>
+            <a href="#"><span>BASED IN TAIWAN</span></a>
+          </li>
           <li>
             <a href="#">
               <div>
-                <p>CURRENTLY FRONT END</p>
-                <p>ENGINEER AT HEXSCHOOL</p>
+                <span>
+                  CURRENTLY FRONT END<br />
+                  ENGINEER AT HEXSCHOOL
+                </span>
               </div>
             </a>
           </li>
-          <li><a href="#">CONTACT ME</a></li>
+          <li>
+            <a href="#"><span>CONTACT M</span>E</a>
+          </li>
         </ul>
       </div>
     </nav>
 
     <header class="banner">
-      <div class="container d-flex">
+      <div class="container d-flex justify-between">
         <img
           src="images/people.png"
           alt="people"
@@ -34,11 +42,11 @@
           style="width: 636px; height: 848px"
         />
         <div class="info">
-          <p class="text-white text-16">Hi</p>
-          <p class="text-white text-16">I’m a front-end developer</p>
-          <p class="text-32 text-00ffa3">William</p>
+          <h2 class="text-white h2">Hi</h2>
+          <h2 class="text-white h2">I’m a front-end developer</h2>
+          <h1 class="text-32 text-00ffa3 text-right">William</h1>
           <div class="d-flex justify-end">
-            <a href="#" class="text-4 mr-1 p-3-6 button-white"
+            <a href="#" class="text-4 mr-1 p-3-6 btn-white"
               >contact me<img
                 src="images/arrow_outward.png"
                 alt="arrow_outward-white"
@@ -48,10 +56,10 @@
       </div>
     </header>
 
-    <section style="background-image: url('images/background-img.png')">
+    <div style="background-image: url('images/background-img.png')">
       <div class="container d-flex introduction">
         <div class="introduction-content">
-          <h2 class="text-16 text-white">Introduction</h2>
+          <h2 class="h2 text-white">Introduction</h2>
           <p class="text-6 mb-8 text-white">
             Hi, I'm William Lee, a Front-End Developer with a passion for
             building beautiful and responsive websites that provide an optimal
@@ -81,46 +89,38 @@
           style="width: 306px; height: 600px"
         />
       </div>
-    </section>
+    </div>
 
-    <section>
-      <div class="container d-flex justify-between about">
-        <div class="card-list" style="width: 636px; height: 328px">
-          <section class="card">
-            <div class="column">
-              <p class="text-5 mb-1">01</p>
-              <p class="text-4 mb-1">Attention to Detail</p>
-              <p class="text-4 mb-1">
-                Meticulous code analysis and optimization.
-              </p>
-            </div>
-          </section>
-          <section class="card">
-            <div class="column">
-              <p class="text-5 mb-1">02</p>
-              <p class="text-4 mb-1">Adaptability</p>
-              <p class="text-4 mb-1">
-                Meticulous code analysis and optimization.
-              </p>
-            </div>
-          </section>
-          <section class="card">
-            <div class="column">
-              <p class="text-5 mb-1">03</p>
-              <p class="text-4 mb-1">Problem Solver</p>
-              <p class="text-4 mb-1">Identifying and resolving issues.</p>
-            </div>
-          </section>
-          <section class="card">
-            <div class="column">
-              <p class="text-5 mb-1">04</p>
-              <p class="text-4 mb-1">Team Player</p>
-              <p class="text-4 mb-1">Collaborates and shares ideas.</p>
-            </div>
-          </section>
-        </div>
-        <div style="width: 526px; height: 420px">
-          <h2 class="text-16">About Me</h2>
+    <div>
+      <div class="container d-flex justify-between items-center about">
+        <ol class="about-list">
+          <li>
+            <p class="fs-3 mb-1">01</p>
+            <p class="fs-3 mb-1">Attention to Detail</p>
+            <p class="text-4 mb-1">
+              Meticulous code analysis and optimization.
+            </p>
+          </li>
+          <li>
+            <p class="fs-3 mb-1">02</p>
+            <p class="fs-3 mb-1">Adaptability</p>
+            <p class="text-4 mb-1">
+              Meticulous code analysis and optimization.
+            </p>
+          </li>
+          <li>
+            <p class="fs-3 mb-1">03</p>
+            <p class="fs-3 mb-1">Problem Solver</p>
+            <p class="text-4 mb-1">Identifying and resolving issues.</p>
+          </li>
+          <li>
+            <p class="fs-3 mb-1">04</p>
+            <p class="fs-3 mb-1">Team Player</p>
+            <p class="text-4 mb-1">Collaborates and shares ideas.</p>
+          </li>
+        </ol>
+        <div class="about-desc">
+          <h2 class="h2">About Me</h2>
           <p class="text-6">
             With over 5 years of experience, I'm proficient in HTML, CSS,
             JavaScript, jQuery, and React. I have a strong understanding of user
@@ -129,25 +129,34 @@
           </p>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="contact">
-      <div class="container d-flex banner justify-between items-center contact-section">
+    <div class="contact">
+      <div
+        class="container d-flex justify-between items-center contact-section"
+      >
         <div class="d-flex items-center">
-          <p class="text-white text-16">CONTACT ME</p>
+          <h2 class="text-white h2">CONTACT ME</h2>
           <img src="images/trending_flat_black_24dp 1.png" alt="" />
         </div>
-        <d>
-          <a href="#"><img src="images/discord.png" alt="discord" class="mr-5"/></a>
-          <a href="#"><img src="images/instagram.png" alt="discord" class="mr-5"/></a>
-          <a href="#"><img src="images/message.png" alt="discord" /></a>
+
+        <div class="d-flex contact-item">
+          <a href="#" class="mr-5"
+            ><img src="images/discord.png" alt="discord"
+          /></a>
+          <a href="#" class="mr-5"
+            ><img src="images/instagram.png" alt="discord"
+          /></a>
+          <a href="#" class="mr-5"
+            ><img src="images/message.png" alt="discord"
+          /></a>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="my-project container">
+    <div class="my-project container">
       <div class="d-flex justify-end">
-        <h2 class="text-16 my-project-title">My Projects</ㄘ>
+        <h2 class="h2 my-project-title mb-4">My Projects</h2>
       </div>
 
       <div class="d-flex">
@@ -166,7 +175,7 @@
                 efficient, and user-friendly code.
               </p>
               <div class="d-flex justify-start">
-                <a href="#" class="text-4 mr-1 button-black p-3-6"
+                <a href="#" class="text-4 mr-1 btn-black p-3-6"
                   >SEE MORE
                   <img
                     src="images/arrow_outward-white.png"
@@ -187,9 +196,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <footer class="footer d-flex justify-between p-10-0">
+    <footer class="footer d-flex justify-center p-10-0">
       <p class="text-white">all rights reserved @hexschool2023</p>
     </footer>
   </body>
