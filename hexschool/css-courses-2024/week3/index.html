@@ -4,19 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>RWD</title>
+    <title>耀眼國際</title>
   </head>
   <body>
     <nav class="nav">
       <div class="container d-flex">
         <div class="logo">
-          <img src="images/logo-white.png" alt="" class="logo-img" />
+          <a href="#">
+            <img src="images/logo-white.png" alt="" class="logo-img" />
+          </a>
         </div>
         <ul class="d-flex justify-between ml-auto">
-          <li><a href="#" class="mr-16">系列鏡框</a></li>
-          <li><a href="#" class="mr-16">門市據點</a></li>
-          <li><a href="#" class="mr-16">部落格</a></li>
-          <li><a href="#">常見問題</a></li>
+          <li><a href="#" class="mr-16 nav-item">系列鏡框</a></li>
+          <li><a href="#" class="mr-16 nav-item">門市據點</a></li>
+          <li><a href="#" class="mr-16 nav-item">部落格</a></li>
+          <li><a href="#" class="nav-item">常見問題</a></li>
         </ul>
       </div>
     </nav>
@@ -39,14 +41,14 @@
       <div class="container">
         <h2 class="intro-title">用專業的心，做專業的事</h2>
         <div class="row">
-          <div class="col-3">
+          <div class="column">
             <div class="card">
               <img src="images/home-section2-1.png" alt="" />
               <h3>單一價格</h3>
               <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
             </div>
           </div>
-          <div class="col-3">
+          <div class="column">
             <div class="card">
               <img src="images/home-section2-2.png" alt="" />
               <h3>單一價格</h3>
@@ -56,7 +58,7 @@
               </p>
             </div>
           </div>
-          <div class="col-3">
+          <div class="column">
             <div class="card">
               <img src="images/home-section2-3.png" alt="" />
               <h3>單一價格</h3>
@@ -66,7 +68,7 @@
               </p>
             </div>
           </div>
-          <div class="col-3">
+          <div class="column">
             <div class="card">
               <img src="images/home-sectioin2-4.png" alt="" />
               <h3>單一價格</h3>
@@ -81,19 +83,19 @@
       <div class="container">
         <h2 class="classic-title">經典系列鏡框</h2>
         <div class="row">
-          <div class="col-4">
+          <div class="column">
             <div class="card">
               <img src="images/home-section3-1.png" alt="" />
               <h2 class="italic">OPTICAL</h2>
             </div>
           </div>
-          <div class="col-4">
+          <div class="column">
             <div class="card">
               <img src="images/home-section3-2.png" alt="" />
               <h2 class="italic">SUNGLASSES</h2>
             </div>
           </div>
-          <div class="col-4">
+          <div class="column">
             <div class="card">
               <img src="images/home-section3-3.png" alt="" />
               <h2 class="italic">FUNCTIONAL</h2>
@@ -107,7 +109,7 @@
       <div class="container">
         <h2 class="design-title">聯名設計鏡框</h2>
         <div class="row">
-          <div class="col-6">
+          <div class="column">
             <div class="card">
               <picture>
                 <!-- 當螢幕寬度少於600px時，替換圖片 -->
@@ -121,7 +123,7 @@
               <h2 class="italic">DOUBLE A+</h2>
             </div>
           </div>
-          <div class="col-6">
+          <div class="column">
             <div class="card">
               <picture>
                 <!-- 當螢幕寬度少於600px時，替換圖片 -->
@@ -143,7 +145,7 @@
       <div class="container">
         <h2 class="customer-title">顧客推薦</h2>
         <div class="row">
-          <div class="col-3">
+          <div class="column">
             <div class="card">
               <img src="images/home-section5-1.png" alt="Logo" class="mb-4" />
               <div class="p-4">
@@ -153,7 +155,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="column">
             <div class="card">
               <img src="images/home-section5-2.png" alt="Logo" class="mb-4" />
               <div class="p-4">
@@ -165,7 +167,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="column">
             <div class="card">
               <img src="images/home-section5-3.png" alt="Logo" class="mb-4" />
               <div class="p-4">
@@ -177,7 +179,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="column">
             <div class="card">
               <img src="images/home-section5-4.png" alt="Logo" class="mb-4" />
               <div class="p-4">
@@ -202,17 +204,19 @@
             <label for="name" class="mb-2">姓名</label>
             <input type="text" id="name" placeholder="林大名" />
           </div>
+
           <div class="input-phone mt-4">
             <lable for="phone" class="mb-2">連絡電話</lable>
             <input type="text" id="phone" placeholder="0912345678" />
           </div>
+
           <div class="input-mail mt-4">
             <lable for="mail" class="mb-2">電子郵件</lable>
             <input type="text" id="mail" placeholder="xxx@gmail.com" />
           </div>
+
           <div class="input-response mt-4">
             <lable for="response" class="mb-2">意見反應</lable>
-            <!-- <input type="text" id="response" placeholder="請輸入" /> -->
             <textarea id="response" placeholder="請輸入"></textarea>
           </div>
           <div class="d-flex mt-4">
@@ -220,6 +224,10 @@
             <p>
               我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
             </p>
+          </div>
+
+          <div class="submit">
+            <a href="#" class="submit-item">送出</a>
           </div>
         </div>
       </div>
@@ -234,7 +242,7 @@
               <li class="mr-12"><a href="#">系列鏡框</a></li>
               <li class="mr-12"><a href="#">門市據點</a></li>
               <li class="mr-12"><a href="#">部落格</a></li>
-              <li class="mr-12"><a href="#">常見問題</a></li>
+              <li><a href="#">常見問題</a></li>
             </ul>
             <div class="footer-contact-phone">
               <span class="material-symbols-outlined"> call </span>
