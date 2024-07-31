@@ -532,6 +532,11 @@ h2 {
   text-align: center;
 }
 
+.design {
+  background-position: center;
+  background-size: cover;
+}
+
 .design .container {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -616,6 +621,14 @@ h2 {
   width: 100%;
 }
 
+.contact .content input[type="tel"] {
+  width: 100%;
+}
+
+.contact .content input[type="email"] {
+  width: 100%;
+}
+
 .contact .content input[type="checkbox"] {
   width: 24px;
   height: 24px;
@@ -686,7 +699,7 @@ h2 {
 }
 
 /* content */
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .container {
     max-width: 696px;
     margin: 0 auto;
@@ -749,7 +762,7 @@ h2 {
 }
 
 /* content */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .intro-title {
     font-size: 24px;
   }
